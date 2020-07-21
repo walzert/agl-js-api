@@ -1,11 +1,11 @@
 import { call as api_call, subscribe as api_subscribe } from './api';
 
 
-export function get_Frequency() {
+export function get_frequency() {
     return api_call("radio/frequency", {});
 }
 
-export function set_Frequency(frequency) {
+export function set_frequency(frequency) {
     return api_call("radio/frequency", { "value" : frequency });
 }
 
@@ -24,7 +24,7 @@ export function get_band_supported(band) {
 
 export function get_frequency_range(band) {
     return api_call("radio/frequency_range", {"band": band });
-
+}
 export function get_frequency_step(band) {
     return api_call("radio/frequency_range", {"band": band });
 }
