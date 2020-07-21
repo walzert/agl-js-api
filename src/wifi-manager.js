@@ -13,7 +13,7 @@ export function scan() {
     return api_call("wifi-manager/scan", {});
 }
 
-export function scan_result() {
+export function get_scan_result() {
     return api_call("wifi-manager/scan_result", {});
 }
 
@@ -21,7 +21,7 @@ export function connect(network) {
     return api_call("wifi-manager/connect", {"network":network});
 }
 
-export function status() {
+export function get_status() {
     return api_call("wifi-manager/status", {});
 }
 
@@ -33,13 +33,13 @@ export function insertpasskey(passkey) {
     return api_call("wifi-manager/insertpasskey", {"passkey": passkey});
 }
 
-export function ask_for_passkey(handler) {
+export function on_ask_for_passkey(handler) {
     return api_subscribe("wifi-manager/subscribe", {
         value: "passkey"
     }, handler);
 }
 
-export function wifiListChanged(handler) {
+export function on_wifiListChanged(handler) {
     return api_subscribe("wifi-manager/subscribe", {
         value: "networkList"
     }, handler);

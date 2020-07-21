@@ -15,32 +15,33 @@ export function answer() {
 }
 
 
-export function callStateChanged(handler) {
+export function on_callStateChanged(handler) {
     return api_subscribe("telephony/callStateChanged", {
         value: "callStateChanged"
     }, handler);
 }
 
-export function dialingCall(handler) {
+export function on_dialingCall(handler) {
     return api_subscribe("telephony/subscribe", {
         value: "dialingCall"
     }, handler);
 }
 
-export function incomingCall(handler) {
+export function on_incomingCall(handler) {
     return api_subscribe("telephony/subscribe", {
         value: "incomingCall"
     }, handler);
 }
 
-export function terminatedCall(handler) {
+export function on_terminatedCall(handler) {
     return api_subscribe("telephony/subscribe", {
         value: "terminatedCall"
     }, handler);
 }
 
-export function online(handler) {
+export function on_online(handler) {
     return api_subscribe("telephony/subscribe", {
         value: "online"
     }, handler);
 }
+metadata
