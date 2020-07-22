@@ -38,7 +38,7 @@ export function stop() {
 }
 
 
-export function scan_start(direction,) {
+export function scan_start(direction) {
     return api_call("radio/scan_start", {"direction": direction });
 }
 
