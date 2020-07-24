@@ -12,33 +12,31 @@ export function do_write(signal_name,signal_value) {
     return api_call("low-can/write", { "signal_name": signal_name, "signal_value": signal_value});
 }
 
-export function get(event) {
-    return api_call("low-can/get", {
-        "event": event
-    });
+export function get_signal(event) {
+    return api_call("low-can/get", { "event": event });
 }
 
-export function subscribe_by_event(event,handler) {
+export function subscribe_by_event(handler,event) {
     return api_subscribe("low-can/subscribe", {
         "event": event
     }, handler);
 }
 
-export function unsubscribe_by_event(event,handler) {
+export function unsubscribe_by_event(handler,event) {
     return api_subscribe("low-can/unsubscribe", {
         "event": event
     }, handler);
 }
 
 
-export function subscribe_by_id(id,handler) {
+export function subscribe_by_id(handler,id) {
     return api_subscribe("low-can/subscribe", {
         "id": id
     }, handler);
 }
 
 
-export function unsubscribe_by_id(id,handler) {
+export function unsubscribe_by_id(handler,id) {
     return api_subscribe("low-can/unsubscribe", {
         "id": id
     }, handler);
