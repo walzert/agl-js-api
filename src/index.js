@@ -30,7 +30,7 @@ import * as taskmanager from './taskmanager';
 import * as telephony from './telephony';
 import * as unicens from './unicens';
 import * as unicenscontroller from './unicens-controller';
-import * as weather from './weather';
+//import * as weather from './weather';
 
 import * as api from './api';
 
@@ -68,6 +68,6 @@ export {
     telephony,
     unicens,
     unicenscontroller,
-    weather,
+    //weather,
     api
 }
