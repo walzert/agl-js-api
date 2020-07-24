@@ -14,7 +14,7 @@ import * as bluetooth from './bluetooth';
 //import * as helloworld from './helloworld';
 //import * as highviwi from './high-viwi';
 import * as homescreen from './homescreen';
-//import * as hvac from './hvac';
+import * as hvac from './hvac';
 //import * as identity from './identity';
 //import * as iiodevices from './iiodevices';
 import * as lowcan from './low-can';
@@ -52,7 +52,7 @@ export {
     //helloworld,
     //highviwi,
     homescreen,
-    //hvac,
+    hvac,
     //identity,
     //iiodevices,
     lowcan,
