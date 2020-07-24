@@ -42,7 +42,7 @@ export function scan_start(direction) {
     return api_call("radio/scan_start", {"direction": direction });
 }
 
-export function scan_start() {
+export function scan_stop() {
     return api_call("radio/scan_stop", {});
 }
 

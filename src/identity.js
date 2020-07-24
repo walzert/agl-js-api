@@ -17,9 +17,6 @@ export function get() {
     return api_call("identity/get", {});
 }
 
-export function logout() {
-    return api_call("identity/logout", { "value" : set_parameter });
-}
 
 export function on_identity_event(handler) {
     return api_subscribe("identity/subscribe", {
