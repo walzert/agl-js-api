@@ -5,6 +5,10 @@ export function get(signal) {
     return api_call("signal-composer/get", {"signal":signal});
 }
 
+export function get_by_options(signal,average,minimum,maximum) {
+    return api_call("signal-composer/get", {'signal': signal, 'options': {'average': average, 'minimum': minimum, 'maximum': maximum }});
+}
+
 export function list() {
     return api_call("signal-composer/list", {});
 }
