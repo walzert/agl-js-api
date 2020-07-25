@@ -25,7 +25,7 @@ import * as network from './network';
 //import * as nfc from './nfc';
 //import * as persistence from './persistence';
 import * as radio from './radio';
-//import * as signalcomposer from './signal-composer';
+import * as signalcomposer from './signal-composer';
 //import * as taskmanager from './taskmanager';
 //import * as telephony from './telephony';
 //import * as unicens from './unicens';
@@ -63,7 +63,7 @@ export {
     //nfc,
     //persistence,
     radio,
-    //signalcomposer,
+    signalcomposer,
     //taskmanager,
     //telephony,
     //unicens,
