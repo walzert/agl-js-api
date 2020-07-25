@@ -13,3 +13,8 @@ export function addObjects(file) {
     return api_call("signal-composer/addObjects", { "file" : file });
 }
 
+export function subscribe_by_signal(handler,signal) {
+    return api_subscribe("low-can/subscribe", {
+        "signal": signal
+    }, handler);
+}
