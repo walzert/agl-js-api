@@ -1,8 +1,8 @@
 import { call as api_call, subscribe as api_subscribe } from './api';
 
 
-export function get(signalparameter) {
-    return api_call("signal-composer/get", {"signal": signalparameter});
+export function get(signal) {
+    return api_call("signal-composer/get", {"signal":signal});
 }
 
 export function list() {
@@ -14,7 +14,7 @@ export function addObjects(file) {
 }
 
 export function subscribe_by_signal(handler,signal) {
-    return api_subscribe("low-can/subscribe", {
+    return api_subscribe("signal-composer/subscribe", {
         "signal": signal
     }, handler);
 }
