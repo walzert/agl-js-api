@@ -4,8 +4,8 @@ import * as afmMain from './afm-main';
 //import * as aglspeech from './agl-speech';
 import * as audiomixer from './audiomixer';
 import * as bluetooth from './bluetooth';
-//import * as bluetoothmap from './bluetooth-map';
-//import * as bluetoothpbap from './bluetooth';
+import * as bluetoothmap from './bluetooth-map';
+import * as bluetoothpbap from './bluetooth';
 //import * as cloudproxy from './cloudproxy';
 //import * as geoclue from './geoclue';
 //import * as geofence from './geofence';
@@ -42,8 +42,8 @@ export {
     //aglspeech,
     audiomixer,
     bluetooth,
-    //bluetoothmap,
-    //bluetoothpbap,
+    bluetoothmap,
+    bluetoothpbap,
     //cloudproxy,
     //geoclue,
     //geofence,
