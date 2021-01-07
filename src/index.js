@@ -31,7 +31,7 @@ import * as signalcomposer from './signal-composer';
 //import * as unicens from './unicens';
 //import * as unicenscontroller from './unicens-controller';
 //import * as weather from './weather';
-
+import * as platforminfo from './platform-info';
 import * as api from './api';
 
 api.init();
@@ -69,5 +69,6 @@ export {
     //unicens,
     //unicenscontroller,
     //weather,
+    platforminfo,
     api
 }

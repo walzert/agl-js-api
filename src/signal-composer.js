@@ -2,7 +2,7 @@ import { call as api_call, subscribe as api_subscribe } from './api';
 
 
 export function get(signal) {
-    return api_call("signal-composer/get", {"signal":signal});
+    return api_call("signal-composer/get", {'signal': signal});
 }
 
 export function get_by_options(signal,average,minimum,maximum) {
@@ -14,11 +14,11 @@ export function list() {
 }
 
 export function addObjects(file) {
-    return api_call("signal-composer/addObjects", { "file" : file });
+    return api_call("signal-composer/addObjects", { 'file' : file });
 }
 
-export function subscribe_by_signal(handler,signal) {
+export function subscribe_by_signal(handler,signalname) {
     return api_subscribe("signal-composer/subscribe", {
-        "signal": signal
+        "signal": signalname
     }, handler);
 }
